@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+} */
+
+/* Navbar Container */
+.navbar {
+  background-color: #4caf50;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo and Title */
+.navbar-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.navbar-title {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: 1.8rem;
+  white-space: nowrap;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #e8f5e9;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #d0e9d2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-logo-title {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .navbar-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 1.3rem;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    gap: 100px;
+    
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+}
